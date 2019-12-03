@@ -1,0 +1,815 @@
+$san-serif: mr-eaves-xl-sans, sans-serif;
+$serif-font: 'New York Small';
+$black-color: #2d2d2d;
+
+
+// Typography
+@font-face {
+    font-family: 'New York Small';
+    src: url('NewYorkSmall-Regular.otf');
+}
+
+h1{
+    font-family: $serif-font;
+    font-weight: 300;
+    font-style: normal;
+    font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (1920 - 320)));
+    line-height: calc(32px + (48 - 32) * ((100vw - 320px) / (1920 - 320)));
+    color: #2d2d2d;
+    letter-spacing: 0.16px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h2{
+    font-family: $san-serif;
+    font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: 200;
+    color: #2d2d2d;
+    letter-spacing: 0.24px;
+    line-height: calc(26px + (44 - 26) * ((100vw - 320px) / (1920 - 320)));
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h3{
+    font-family: $serif-font;
+    font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+    color: #2d2d2d;
+    letter-spacing: 0.24px;
+    line-height: calc(26px + (32 - 26) * ((100vw - 320px) / (1920 - 320)));
+    letter-spacing: 0.32px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.san-serif-h3{
+    font-family: $san-serif;
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+    font-weight:400; 
+    color: #2d2d2d;
+    line-height: calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
+    letter-spacing: 0.24px;
+    margin-bottom: 0px;
+}
+
+p{
+    font-family: $san-serif;
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+    font-weight:300; 
+    color: #2d2d2d;
+    line-height: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
+    letter-spacing: 0.48px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+button, a, .label{
+    font-family: $san-serif;
+    font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+    font-weight:400; 
+    color: #2d2d2d; 
+    letter-spacing: 1.6px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+// Body css
+::-moz-selection { /* Code for Firefox */
+    background: y#F4F1BB;
+}
+  
+  ::selection {
+    background: #F4F1BB;
+}
+
+body{
+    margin: 0px;
+    padding-bottom: 96px;
+}
+
+img{
+   
+    height: auto;
+}
+
+hr{
+    border-top: 1px solid #ededed;
+    width: 100%;
+    margin: 0px;
+}
+ul, ol{
+    list-style: none;
+    padding: 0px;
+}
+
+navbar{
+    position: relative;
+    top: 0;
+    display:grid;
+    align-self: start;
+}
+
+//navbar-css
+.nav-content{
+  border-bottom: 2px solid #EDEDED;
+  background-color: white;
+  display: flex;
+}
+
+.nav-content a{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.nav-anchors{
+    align-self: center;
+    margin: 0px;
+    display: inline-block;
+    margin-left:auto; 
+}
+
+.nav-anchors li{
+    display: inline-block;
+    margin-left: 48px;
+}
+
+// landing section-csss
+
+.process-item h3{
+    max-width: 90%;
+}
+.see-more a::before{
+    content: url(assets/chevron.svg);
+    padding-right: 16px;
+    align-self: center;
+}
+
+.projects{
+    width: 100vw;
+}
+
+.projects h2{
+    font-weight: 200;
+}
+
+.project{
+    width: 100%;
+    background-color: #FAFAFA;
+    box-shadow: inset 0px 3.8vw 0px 0px white;
+    box-sizing: border-box;
+}
+
+.project-list-details img{
+    grid-column-start:1;
+    grid-column-end:9;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.project-list-description{
+    grid-column-start:8;
+    grid-column-end:13;
+    grid-row: 1;
+    background-color: white;
+    padding: 40px;
+    align-self:center;
+    font-weight:200; 
+}
+
+.project-list-description .san-serif-h3{
+    color: #777777;
+    font-weight: 200;
+}
+
+.project-list-description p:last-child{
+    margin-top: 24px;
+}
+
+// FOOTER 
+footer *{
+    justify-self: center;
+}
+
+footer img{
+    margin-top: 96px;
+}
+
+footer .serif-h3{
+    margin-top: 48px;
+}
+
+footer h1{
+    margin-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #CB202E ;
+}
+
+/* ------ CASE STUDY TEMPLATE CSS -------- */
+header{
+    margin:0 13%;
+    background: white;
+}
+
+.back-to-home a:nth-child(2){
+    position: relative;
+    bottom:12px;
+    margin-left: 16px;
+}
+.back-button{
+    text-decoration: none;
+    padding: 48px 0px 48px 0px;
+    display: inline-flex;
+}
+
+
+.container{
+    display: grid;
+    margin: 0px 13% 0px 13%;
+    grid-column-gap:30px;
+    grid-template-columns:repeat(12,1fr);
+    max-width: 1920px;
+}
+
+.container > img{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+.project-name{
+    grid-column:span 7;
+}
+
+.project-name h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.project-name h2{
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.project-name button{
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+.footnote{
+    font-style: italic;
+    letter-spacing: 1.2px;
+    margin-bottom: 0px;
+}
+
+.project-description{
+    grid-column:span 5;
+}
+
+.project-description p{
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.project-description ul p{
+    margin: 0px;
+}
+
+.project-description ul{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.project-description ul li{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-right: 32px;
+}
+
+.visit-live{
+    border: 1px solid #2d2d2d;
+    padding: 16px 24px;
+    background-color: white;
+    margin-right:40px;
+}
+
+.visit-live a{
+    position: relative;
+    bottom: 4px;
+}
+
+.icon-play{
+    background-image : url(https://res.cloudinary.com/rgcorporate/image/upload/v1574243547/icons8-website-50_1.svg);
+    background-size: cover;
+    background-position: center center;
+    width:20px;
+    height:20px;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.project-tags li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 32px;
+}
+
+.project-tags li p{
+  cursor: auto;
+  font-weight: 600;
+}
+
+.cover-image-container{
+  width: 100vw;
+  height: 100vh !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  padding: 0;
+  
+}
+
+.rgf{
+    background-image:url(https://res.cloudinary.com/rgcorporate/image/upload/v1574242598/Cross-PX_2.png);
+}
+
+.crosspx{
+    background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1574701074/Cross-PX_3.png);
+}
+
+.crossdx{
+    background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1575096567/Cross-DX.png);
+}
+
+.gwb{
+    background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1574785744/GWB.png);
+}
+
+.rg-web{
+    background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1574935233/Cross-PX_4.png);
+}
+
+.landmark{
+    background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1575013781/Landmark-Mockup.png);
+}
+
+.auv{
+    background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1575017205/GWB_1.png);
+}
+
+.project-cover-image{
+    width: 100vw;
+    height: auto;
+}
+
+.project-case-study{
+    grid-column:span 7;
+    grid-row: 1;
+}
+
+// Container css classes
+.twelve-col-container{
+    grid-column:span 12;
+}
+
+.eight-col-container{
+    grid-column:span 8;
+}
+
+.seven-col-container{
+    grid-column:span 7;
+}
+
+.six-col-container{
+    grid-column:span 6;
+}
+
+.five-col-container{
+    grid-column:span 5;
+}
+
+.four-col-container{
+    grid-column:span 4;
+}
+
+.four-two-two-col-container{
+    grid-column:span 4;
+}
+
+.three-col-container{
+    grid-column:span 3;
+}
+
+.three-two-col-container{
+    grid-column:span 3;
+}
+
+.two-col-container{
+    grid-column:span 2;
+}
+
+.one-col-container{
+    grid-column:span 1;
+}
+
+.slide-embed{
+    width:80%;
+    margin-left: 10%;
+}
+
+.rgf-initiative-image{
+    width: 100%;
+    height: auto;
+}
+
+.margin-96{
+    margin-top:96px !important;
+}
+
+.margin-96-48{
+    margin-top: 96px !important;
+}
+
+.margin-64{
+    margin-top: 64px !important;
+}
+
+.margin-64-32{
+    margin-top:64px !important;
+}
+
+.margin-48{
+    margin-top: 48px !important;
+}
+
+.margin-48-16{
+    margin-top: 48px !important;
+}
+
+.margin-32{
+    margin-top: 32px !important;
+}
+
+.margin-32-24{
+    margin-top: 32px !important;
+}
+
+.margin-32-24-24{
+    margin-top: 32px !important;
+}
+
+.margin-32-16{
+    margin-top: 32px !important;
+}
+
+.margin-24{
+    margin-top: 24px !important;
+}
+
+.margin-16{
+    margin-top: 16px;
+}
+
+.margin-16-8{
+    margin-top: 16px !important;
+}
+
+.margin-8{
+    margin-top: 8px !important; 
+}
+
+.margin-0{
+    margin-top: 0px;
+}
+
+.case-study-nav-links{
+    position: relative; 
+    background-color: white;
+    margin-bottom: 0px;
+    overflow-x: auto;
+}
+
+.case-study-nav-anchors li{
+    display: inline-block;
+    list-style: none;
+    padding-right: 48px;
+}
+
+.case-study-nav-anchors li a{
+    padding-bottom: 16px;  
+} 
+
+.case-study-nav-anchors{
+    grid-column:span 12;
+    border-bottom: 2px solid #EDEDED;
+    padding-bottom: 16px;
+    background-color: white;
+    z-index: 2;
+    padding-top: 48px;
+    margin-bottom: 0px;
+}
+
+.stick{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+}
+
+.active{
+    border-bottom: 2px solid red;
+}
+
+// MEDIA QUERIES 1440PX
+
+
+// MEDIA QUERIES 1024PX
+@media screen and (max-width: 1024px) {
+
+    .nav-anchors{
+        visibility: hidden;
+    }
+    header{
+        margin: 0px 8% 0px 8%;
+    }
+
+    .container{
+        margin: 0px 8% 0px 8%;
+        grid-column-gap:30px;
+        grid-template-columns:repeat(8,1fr);
+    }
+    .project{
+        background-color: white;
+    }
+
+    .project-list-details img{
+        grid-column-start:1;
+        grid-column-end:9;
+        grid-row: 1;
+        width: 100%;
+        height: auto;
+    }
+    
+    .project-list-description{
+        grid-column-start:1;
+        grid-column-end:9;
+        grid-row: 2;
+        background-color: white;
+        padding: 0px;
+        align-self:center;
+        font-weight:200; 
+        margin-top: 32px;
+    }
+
+    .twelve-col-container{
+        grid-column:span 8;
+    }
+
+    .eight-col-container{
+        grid-column:span 6;
+    }
+    
+    .seven-col-container{
+        grid-column:span 8;
+    }
+    
+    .six-col-container{
+        grid-column:span 4;
+    }
+
+    .five-col-container{
+        grid-column:span 8;
+    }
+    
+    .four-col-container{
+        grid-column:span 4;
+    }
+
+    .four-two-two-col-container{
+        grid-column:span 2;
+    }
+    
+    .three-col-container{
+        grid-column:span 4;
+    }
+
+    .three-two-col-container{
+        grid-column:span 4;
+    }
+    
+    .two-col-container{
+        grid-column:span 2;
+    }
+
+    .one-col-container{
+        grid-column:span 0 !important;
+    }
+
+    .margin-96{
+        margin-top:64px !important;
+    }
+
+    .margin-64{
+        margin-top:48px !important;
+    }
+
+    .margin-32-24-24{
+        margin-top: 24px !important;
+    }
+
+    .slide-embed{
+        width:100%;
+        margin-left: 0;
+    }
+
+    .project-tags{
+        margin-top: 24px;
+    }
+
+    .center-align-text{
+        grid-column-start:2 !important;
+        grid-column-end:8 !important;
+    }
+    
+    .center-align-pdf{
+        grid-column-start:2 !important;
+        grid-column-end:8 !important; 
+    }
+    
+}
+
+// MEDIA QUERIES 600px
+@media screen and (max-width: 600px) {
+    header{
+        margin: 0px 8% 0px 8%;
+    }
+
+    .margin-96-48{
+        margin-top: 48px !important;
+    }
+
+    .margin-64-32{
+        margin-top:32px !important;
+    }
+
+    .margin-48-16{
+        margin-top: 16px !important;
+    }
+
+    .margin-32-24{
+        margin-top: 24px !important;
+    }
+
+    .margin-32-24-24{
+        margin-top: 24px !important;
+    }
+
+    .margin-32-16{
+        margin-top: 16px !important;
+    }
+
+    .margin-16-8{
+        margin-top: 8px !important;
+    }
+
+    .container{
+        margin: 0px 8% 0px 8%;
+        grid-column-gap:30px;
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .twelve-col-container{
+        grid-column:span 4;
+    }
+
+    .eight-col-container{
+        grid-column:span 4;
+    }
+    
+    .six-col-container{
+        grid-column:span 4;
+    }
+    
+    .four-col-container{
+        grid-column:span 4;
+    }
+
+    .four-two-two-col-container{
+        grid-column:span 2;
+    }
+    
+    .three-col-container{
+        grid-column:span 4;
+    }
+
+    .three-two-col-container{
+        grid-column:span 2;
+    }
+    
+    .two-col-container{
+        grid-column:span 2;
+    }
+
+    body{
+        padding-bottom: 48px;
+    }
+
+    .back-button{
+        padding: 16px 0px 16px 0px;
+    }
+
+    .project-tags li{
+        padding-right: 16px;
+    }
+
+    .case-study-nav-anchors{
+        padding-top:0px;
+    }
+
+    .case-study-nav-anchors li{
+        padding-right:16px;
+    }
+
+    .center-align-text{
+        grid-column-start:1 !important;
+        grid-column-end:5 !important;
+    }
+    
+    .center-align-pdf{
+        grid-column-start:1 !important;
+        grid-column-end:5 !important; 
+    }
+  }
+  
+.next-project hr{
+    grid-column:span 12;
+}
+
+.next-project h2{
+    grid-column:span 12;
+}
+
+.two-col-image{
+    display:inline-block;
+}
+
+.image-caption > img{
+    width: 100%;
+    height: auto;
+    justify-self: center;
+}
+
+.image-caption p{
+    max-width: 80%;
+    justify-self: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+}
+
+.rgweb-approach{
+    border: 1px solid #2D2D2D;
+    padding: 64px 32px;
+}
+
+.center-align{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-align-text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start:4;
+    grid-column-end:10;
+}
+
+.center-align-pdf{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-start:2;
+    grid-column-end:12;
+}
+
+.bullet-list{
+    list-style: disc;
+}
+
+.width-100-per{
+    width: 100%;
+    height: auto;
+}
