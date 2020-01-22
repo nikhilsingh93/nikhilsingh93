@@ -85,8 +85,21 @@ body {
   padding-bottom: 96px;
 }
 
-img {
+.nav-content img {
   height: 32px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .nav-content img {
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-content img {
+    height: 24px;
+  }
 }
 
 hr {
@@ -171,6 +184,12 @@ navbar {
 
 .process-item h3 {
   max-width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .process-item h3 {
+    max-width: 100% !important;
+  }
 }
 
 .see-more a::before {
@@ -262,6 +281,23 @@ header {
   text-decoration: none;
   padding: 24px 0px 24px 0px;
   display: inline-flex;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.container iframe{
+  width: 100%;
+  height: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container iframe{
+    height: 480px;
+  }
+
+  .container iframe{
+    height: 320px;
+  }
 }
 
 .container {
@@ -396,10 +432,6 @@ header {
   background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1575195055/SabTera_Fnd-min.jpg);
 }
 
-.crosspx {
-  background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1574701074/Cross-PX_3.png);
-}
-
 .crossdx {
   background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1575096567/Cross-DX.png);
 }
@@ -448,6 +480,16 @@ header {
 
 .five-col-container {
   grid-column: span 5;
+}
+
+.width-90-per{
+  width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .width-90-per{
+    width: 100%;
+  }
 }
 
 .four-col-container {
@@ -584,7 +626,7 @@ header {
 
 @media screen and (max-width: 1024px) {
   .nav-anchors {
-    visibility: hidden;
+    display: none;
   }
 
   header {
@@ -664,6 +706,22 @@ header {
     grid-column: span 0 !important;
   }
 
+  .margin-96-64-32 {
+    margin-top: 48px !important;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .margin-96-64-32 {
+      margin-top: 16px !important;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .margin-96-64-32 {
+      margin-top: 0px !important;
+    }
+  }
+
   .margin-96 {
     margin-top: 64px !important;
   }
@@ -731,11 +789,11 @@ header {
   .container {
     margin: 0px 8% 0px 8%;
     grid-column-gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 
   .twelve-col-container {
-    grid-column: span 4;
+    grid-column: span 4 !important;
   }
 
   .eight-col-container {
@@ -802,6 +860,10 @@ header {
 
 .next-project h2 {
   grid-column: span 12;
+}
+
+.project{
+  list-style: none;
 }
 
 .two-col-image {
@@ -931,3 +993,4 @@ header {
 }
 
 /*# sourceMappingURL=style.css.map */
+
