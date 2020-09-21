@@ -730,7 +730,7 @@ header {
     }
 
     .seven-col-container {
-      grid-column: span 4 !important; 
+      grid-column: span 8; 
     }
   }
 
