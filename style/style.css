@@ -817,7 +817,7 @@ header {
   }
 
   .six-8-4-col-container {
-    grid-column: span 4;
+    grid-column: span 8 !important;
   }
 
   .four-col-container {
