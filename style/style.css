@@ -37,6 +37,8 @@ h3 {
   margin-top: 0px;
 }
 
+html{scroll-behavior:smooth}
+
 .san-serif-h3 {
   font-family: mr-eaves-xl-sans, sans-serif;
   font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
