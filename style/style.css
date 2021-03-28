@@ -419,6 +419,16 @@ header {
   margin-right: 8px;
 }
 
+.icon-resume {
+  background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1616966943/icons8-resume-50.png);
+  background-size: cover;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .project-tags li {
   list-style: none;
   display: inline-block;
