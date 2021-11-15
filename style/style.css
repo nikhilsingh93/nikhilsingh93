@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "New York Small";
-  src: url("NewYorkSmall-Regular.otf");
+  font-family: "Cormorant";
+  src: url("Cormorant-Regular.ttf");
 }
 h1 {
-  font-family: "New York Small";
+  font-family: "Cormorant";
   font-weight: 300;
   font-style: normal;
   font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (1920 - 320)));
@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-  font-family: mr-eaves-xl-sans, sans-serif;
+  font-family: Karla, sans-serif;
   font-size: calc(22px + (36 - 22) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 200;
   color: #2d2d2d;
@@ -26,9 +26,9 @@ h2 {
 }
 
 h3 {
-  font-family: "New York Small";
-  font-weight: 200;
-  font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
+  font-family: "Cormorant";
+  font-weight: 500;
+  font-size: calc(22px + (24 - 20) * ((100vw - 320px) / (1920 - 320)));
   color: #2d2d2d;
   letter-spacing: 0.24px;
   line-height: calc(26px + (32 - 26) * ((100vw - 320px) / (1920 - 320)));
@@ -40,29 +40,39 @@ h3 {
 html{scroll-behavior:smooth}
 
 .san-serif-h3 {
-  font-family: mr-eaves-xl-sans, sans-serif;
-  font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+  font-family: Karla, sans-serif;
+  font-size: calc(16px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 300;
   color: #2d2d2d;
-  line-height: calc(24px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(20px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
+  letter-spacing: 0.24px;
+  margin-bottom: 0px;
+}
+
+.san-serif-h4{
+  font-family: Karla, sans-serif;
+  font-size: calc(14px + (24 - 18) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 300;
+  color: #2d2d2d;
+  line-height: calc(20px + (32 - 24) * ((100vw - 320px) / (1920 - 320)));
   letter-spacing: 0.24px;
   margin-bottom: 0px;
 }
 
 p {
-  font-family: mr-eaves-xl-sans, sans-serif;
-  font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
+  font-family: Karla, sans-serif;
+  font-size: calc(14px + (18 - 16) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 300;
   color: #2d2d2d;
-  line-height: calc(22px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
+  line-height: calc(20px + (24 - 22) * ((100vw - 320px) / (1920 - 320)));
   letter-spacing: 0.48px;
   margin-bottom: 0px;
   margin-top: 0px;
 }
 
 button, a, .label {
-  font-family: mr-eaves-xl-sans, sans-serif;
-  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
+  font-family: Karla, sans-serif;
+  font-size: calc(10px + (14 - 12) * ((100vw - 320px) / (1920 - 320)));
   font-weight: 400;
   color: #2d2d2d;
   letter-spacing: 1.6px;
