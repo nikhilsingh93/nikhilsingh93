@@ -419,6 +419,16 @@ header {
   margin-right: 8px;
 }
 
+.icon-playbtn {
+  background-image: url("https://img.icons8.com/ios/100/null/play--v1.png");
+  background-size: cover;
+  background-position: center center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .icon-figma {
   background-image: url(https://res.cloudinary.com/rgcorporate/image/upload/v1608526638/figma-1.jpg);
   background-size: cover;
